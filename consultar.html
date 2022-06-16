@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--↓ CSS Files ↓-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!--↑ CSS Files ↑-->
+  <title>User Search</title>
+</head>
+
+<body>
+  <!--↓ Nav Bar ↓-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="" href="cadastro.html">Cadastro</a>
+      <a class="" href="consultar.html">Consultar Clientes</a>
+      <a class="" href="profile.html">Atualizar Cliente</a>
+    </div>
+  </nav>
+  <!--↑ End Nav Bar ↑-->
+  <header class="text-center text-dark">
+    <div class="container"><img class="img-fluid" src="assets/images/user.png">
+      <h1 class="">Consulta de Clientes</h1>
+      <hr>
+    </div>
+  </header>
+  <section class="text-center">
+    <form id="formselect">
+      <select id="typefilter">
+        <option value="0">Nome</option>
+        <option value="1">E-mail</option>
+      </select>
+      <input id="search">
+      <br><br>
+      <input type="submit" form="formselect" value="Procurar">
+    </form>
+    <br><br>
+    <div class="container">
+      <!---->
+      <table class="table table-dark table-hover">
+        <!---->
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Celular</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">CEP</th>
+            <th scope="col">Rua</th>
+            <th scope="col">Observação</th>
+          </tr>
+        </thead>
+        <tbody id="users">
+
+        </tbody>
+      </table>
+      <!---->
+    </div>
+  </section>
+  <br><br>
+  <!--↓ JS Files ↓-->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!--↑ JS Files ↑-->
+</body>
+
+</html>
+<!--↓  ↓-->
+<!--↑  ↑-->

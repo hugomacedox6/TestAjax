@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--↓ CSS Files ↓-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!--↑ CSS Files ↑-->
+  <title>User Editor</title>
+</head>
+
+<body>
+  <!--↓ Nav Bar ↓-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="" href="cadastro.html">Cadastro</a>
+      <a class="" href="consultar.html">Consultar Clientes</a>
+      <a class="" href="atualizar.html">Atualizar Cliente</a>
+      <a class="" href="deletar.html">Deletar Cliente</a>
+    </div>
+  </nav>
+  <!--↑ End Nav Bar ↑-->
+  <header class="text-center text-dark">
+    <div class="container"><img class="img-fluid" src="assets/images/user.png">
+      <form id="formload">
+        <label>ID Cliente</label>
+        <input type="number" id="idclient">
+        <input type="submit" form="formload" value="Carregar">
+      </form>
+      <br>
+      <form id="formdelete">
+        <input class="btn-danger" id="formdelete" form="formdelete" type="submit" value="Deletar">
+      </form>
+      <br>
+      <h1 id="nomedisplay"></h1>
+      <hr>
+      <h2 id="observationdisplay"></h2>
+    </div>
+  </header>
+  <br>
+  <section class="text-center">
+    <form id="formupdate">
+      <div class="container">
+        <!---->
+        <hr>
+        <h5>Informações Pessoais</h5>
+        <hr>
+        <!---->
+        <div class="container">
+          <div class=" row">
+            <div class="col-md-6 col-lg-3">
+              <label>Nome</label>
+              <input id="nomecliente">
+              <br><br>
+              <label>Data Nascimento</label>
+              <input id="nascimentocliente" type="date">
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label>E-mail</label>
+              <input id="emailcliente">
+              <br><br>
+              <label>Celular</label>
+              <input id="celularcliente">
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label>CPF</label>
+              <br>
+              <input id="cpflciente">
+            </div>
+          </div>
+          <!---->
+          <hr>
+          <h5>Endereço</h5>
+          <hr>
+          <!---->
+          <div class="col-md-6 col-lg-12">
+            <label>CEP</label>
+            <br>
+            <input id="cepcliente">
+            <br><br>
+            <label>Rua</label><br>
+            <input id="ruacliente">
+          </div>
+        </div>
+        <!---->
+        <hr>
+        <h5>Observação</h5>
+        <hr>
+        <!---->
+        <textarea id="observacaocliente"></textarea>
+        <hr>
+        <input type="submit" form="formupdate" value="Alterar">
+      </div>
+    </form>
+    <br><br>
+  </section>
+  <!--↓ JS Files ↓-->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!--↑ JS Files ↑-->
+</body>
+
+</html>
+<!--↓  ↓-->
+<!--↑  ↑-->

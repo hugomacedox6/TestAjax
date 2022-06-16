@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--↓ CSS Files ↓-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!--↑ CSS Files ↑-->
+  <title>User Editor</title>
+</head>
+
+<body>
+  <!--↓ Nav Bar ↓-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="" href="cadastro.html">Cadastro</a>
+      <a class="" href="consultar.html">Consultar Clientes</a>
+      <a class="" href="profile.html">Atualizar Cliente</a>
+    </div>
+  </nav>
+  <!--↑ End Nav Bar ↑-->
+  <header class="text-center text-dark">
+    <div class="container"><img class="img-fluid" src="assets/images/user.png">
+      <form id="formload">
+        <label>ID Cliente</label>
+        <input type="number" id="idclient">
+        <input type="submit" form="formload" value="Carregar">
+      </form>
+      <br>
+      <form id="formdelete">
+        <input class="btn-danger" id="formdelete" form="formdelete" type="submit" value="Deletar">
+      </form>
+      <br>
+      <h1 id="nomedisplay"></h1>
+      <hr>
+      <h2 id="observationdisplay"></h2>
+    </div>
+  </header>
+  <br>
+  <section class="text-center">
+    <form id="formupdate">
+      <div class="container">
+        <!---->
+        <hr>
+        <h5>Informações Pessoais</h5>
+        <hr>
+        <!---->
+        <div class="container">
+          <div class=" row">
+            <div class="col-md-6 col-lg-4">
+              <label>Nome</label>
+              <br>
+              <input oninput="validarnome()" type="text" id="nome" name="nome" required>
+              <br><br>
+              <label>Data Nascimento</label>
+              <br>
+              <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <label>E-mail</label>
+              <br>
+              <input type="email" id="email" name="email" required>
+              <br><br>
+              <label>Celular</label>
+              <br>
+              <input oninput="validarcelular()" type="text" id="celular" name="celular" required>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <label>CPF</label>
+              <br>
+              <input oninput="validarcpf()" maxlength="11" minlength="11" placeholder="Apenas numero" type="text" id="cpf" name="cpf" required>
+            </div>
+          </div>
+          <!---->
+          <hr>
+          <h5>Endereço</h5>
+          <hr>
+          <!---->
+          <div class="col-md-6 col-lg-12">
+            <label>CEP</label>
+            <br>
+            <input type="number" id="cep" name="cep" required>
+            <br><br>
+            <label>Rua</label><br>
+            <input type="text" id="rua" name="rua" required>
+          </div>
+        </div>
+        <!---->
+        <hr>
+        <h5>Observação</h5>
+        <hr>
+        <!---->
+        <textarea maxlength="300" name="observacao" id="observacao"></textarea>
+        <hr>
+        <input type="submit" form="formupdate" value="Alterar">
+      </div>
+    </form>
+    <br><br>
+  </section>
+  <!--↓ JS Files ↓-->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!--↑ JS Files ↑-->
+</body>
+
+</html>
+<!--↓  ↓-->
+<!--↑  ↑-->

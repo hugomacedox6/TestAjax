@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--↓ CSS Files ↓-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!--↑ CSS Files ↑-->
+  <title>User Register</title>
+</head>
+
+<body>
+  <!--↓ Nav Bar ↓-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="" href="cadastro.html">Cadastro</a>
+      <a class="" href="consultar.html">Consultar Clientes</a>
+      <a class="" href="atualizar.html">Atualizar Cliente</a>
+      <a class="" href="deletar.html">Deletar Cliente</a>
+    </div>
+  </nav>
+  <!--↑ End Nav Bar ↑-->
+  <header class="text-center text-dark">
+    <div class="container"><img class="img-fluid" src="assets/images/user.png">
+      <h1 class="">Cadastro de Clientes</h1>
+      <hr>
+    </div>
+  </header>
+  <section class="text-center">
+    <div class="container">
+      <form id="formcadastro">
+        <p>Nome<input type="text" id="nome" name="nome" required></p>
+        <p>CPF<input type="number" id="cpf" name="cpf" required></p>
+        <p>Data Nascimento<input type="date" id="nascimento" name="nascimento" required></p>
+        <p>E-mail<input type="email" id="email" name="email" required></p>
+        <p>Celular<input type="tel" id="celular" name="celular" required></p>
+        <p>CEP<input type="number" id="cep" name="cep" required></p>
+        <p>Rua<input type="text" id="rua" name="rua" required></p>
+        <p>Observação</p>
+        <textarea maxlength="300" name="observacao" id="observacao"></textarea>
+        <input type="submit" form="formcadastro" value="Cadastrar">
+      </form>
+    </div>
+  </section>
+  <!--↓ JS Files ↓-->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!--↑ JS Files ↑-->
+</body>
+
+</html>
+<!--↓  ↓-->
+<!--↑  ↑-->
